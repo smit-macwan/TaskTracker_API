@@ -9,6 +9,7 @@
 *.log
 
 # Frontend dependencies and build outputs
+frontend/
 frontend/node_modules/
 frontend/dist/
 
