@@ -141,7 +141,6 @@ npm run dev
 ## Trade-Offs / Limitations
 
 - **Database choice:** SQLite simplifies setup but is not ideal for high write concurrency or multi-node scaling.
-- **Authorization granularity:** Role-based checks are coarse-grained; no policy/permission matrix yet.
 - **API maturity:** No pagination/filtering/sorting contracts for task list endpoints yet.
 - **Observability:** Limited telemetry/correlation/audit logging for production incident analysis.
 - **Operational hardening:** No rate limiting, rotation strategy for JWT keys, or secrets management integration in current baseline.
