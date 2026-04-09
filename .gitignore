@@ -1,0 +1,18 @@
+.vs/
+.vscode/
+
+# .NET build outputs
+**/bin/
+**/obj/
+
+# Logs
+*.log
+
+# Frontend dependencies and build outputs
+frontend/node_modules/
+frontend/dist/
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
