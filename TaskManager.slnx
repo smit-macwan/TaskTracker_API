@@ -5,4 +5,7 @@
     <Project Path="src/TaskManager.Infrastructure/TaskManager.Infrastructure.csproj" />
     <Project Path="src/TaskManager.WebApi/TaskManager.WebApi.csproj" />
   </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/TaskManager.Application.Tests/TaskManager.Application.Tests.csproj" />
+  </Folder>
 </Solution>
