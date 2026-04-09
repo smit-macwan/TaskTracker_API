@@ -1,4 +1,4 @@
-# Task Tracker Backend (Engineer-Focused)
+# Task Tracker Backend
 
 A full-stack application for a Task Tracking implemented in ASP.NET Core Web API with Clean Architecture boundaries and JWT role-based access control.
 
