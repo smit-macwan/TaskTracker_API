@@ -1,10 +1,38 @@
 # Task Tracker Backend
 
-A full-stack application for a Task Tracking implemented in ASP.NET Core Web API with Clean Architecture boundaries and JWT role-based access control.
+A Task Tracking application is implemented in ASP.NET Core Web API with Clean Architecture boundaries and JWT role-based access control. It provides:
+
+- User Authentication & Authorization - Secure JWT based authentication
+- Task Create/Update - Create, update task details, change task status
+- RESTFul API - Well structured API with Swagger documentation
 
 ---
 
 ## Application Architecture
+
+Architecture & Design Patterns
+Clean Architecture (Layered Architecture)
+The application follows Clean Architecture principles with clear separation of concerns:
+
+┌─────────────────────────────────────────────────────────┐
+│                    Presentation Layer                   │
+│              (API Controllers, Middleware)              │
+└──────────────────────┬──────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────┐
+│                 Application Layer                       │
+│    (Use Cases, Handlers, DTOs)                          │
+└──────────────────────┬──────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────┐
+│                   Domain Layer                          │
+│    (Entities, Domain Events, Business Logic)            │
+└──────────────────────┬──────────────────────────────────┘
+                       │
+┌──────────────────────▼──────────────────────────────────┐
+│              Infrastructure Layer                       │
+│    (Data Access, Repositories, External Services)       │
+└─────────────────────────────────────────────────────────┘
 
 The solution is split by responsibility and dependency direction:
 
